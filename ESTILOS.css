@@ -162,7 +162,7 @@ slider img{
 }
 .imgEspera{
     display: flex;
-    animation: rodar 2s infinite;
+    animation: rodar 2s infinite alternate;
     width: 50px;
 }
 @keyframes rodar{
