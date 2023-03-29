@@ -144,11 +144,12 @@ slider img{
     display: flex;
     padding: 10px;
     flex-direction: column;
-    width: 500px;
+    width: 70%;
 }
 .formulario label{
     display: flex;
 }
+
 .btnEnviar {
     border: none;
     width: 80px;
