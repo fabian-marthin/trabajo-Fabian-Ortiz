@@ -279,7 +279,6 @@ h1{
         top: 0;
     }
     .btn-menu a {
-        padding: 5px 20px;
         text-decoration: none;
         color: white;
         cursor: pointer;
@@ -298,7 +297,7 @@ h1{
     }
     .lgo2{
         display: flex;
-        width: 300px;
+        width: 70%;
     }
     .portada {
         height: 230px;
