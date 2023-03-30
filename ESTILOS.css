@@ -403,16 +403,12 @@ h1{
     .containerSlider .izq{
         background: transparent;
         width: 54px;
-        position: absolute;
-        top: 45%;
-        left: 6%;
+        position: unset;
     }
     .containerSlider .der{
         background: transparent;
         width: 54px;
-        position: absolute;
-        top: 45%;
-        left: 81%;
+        position: unset;
     }
 }
 @media (min-width: 1135px){
