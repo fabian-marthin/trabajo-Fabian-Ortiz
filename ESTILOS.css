@@ -374,4 +374,10 @@ h1{
         width: 1335px;
         height: 100%;
     }
+    .portada {
+        background-color: rgb(198 180 158);
+        height: 270px;
+        display: flex;
+        justify-content: center;
+    }
 }
