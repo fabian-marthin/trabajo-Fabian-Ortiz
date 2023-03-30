@@ -39,16 +39,21 @@ body{
     padding: 0 50px;
     align-items: center;
     flex-wrap: wrap;
+    background: #007c3d;
 }
 .btn-menu a{
     padding: 5px 20px;
-    text-decoration: none;   
+    text-decoration: none; 
+    color: white;  
 }
 .btn-menu a:hover{
-    border-bottom: solid green;
-    color: green;
+    background-color: #7bd1a6;
+    color: #ffffff;
 }
-.btn-menu img{
+.cerrarMenu{
+    display: none;
+}
+.lgo2{
     display: none;
 }
 .logos{
@@ -136,11 +141,11 @@ h1{
     flex-direction: column;
     padding: 10px 25%;
     text-decoration: none;
-    background: green;
+    background: #007c3d;
     color: white;
 }
 .opciones a:hover {
-    background: #013a0f;
+    background: #7bd1a6;
 }
 
 /* MI HISTORIA */
@@ -260,18 +265,13 @@ h1{
         height: 100%;
     }
     .btn-menu {
-        display: flex;
-        justify-content: center;
-        padding: 0 50px;
-        align-items: center;
-        flex-wrap: wrap;
-        border: solid 1px green;
         flex-direction: column;
         position: absolute;
-        background: rgb(10, 10, 10, 90%);
+        background: rgb(98 69 69 / 90%);
         width: 100%;
         height: 100%;
         top: 0;
+        background-attachment: fixed;
     }
     .btn-menu a {
         padding: 5px 20px;
@@ -282,13 +282,19 @@ h1{
     .btn-menu a:hover{
         border-bottom: solid 2px rgb(73, 97, 79);
         color: rgb(73, 97, 79) ;
+        border-radius: 15px;
     }
-    .btn-menu img{
+    .cerrarMenu{
         display: flex;
         position: absolute;
         top: 0;
         left: 83%;
         width: 60px;
+    }
+    .lgo2{
+        display: flex;
+        width: 250px;
+    }
     }
     .portada {
         height: 230px;
@@ -315,6 +321,7 @@ h1{
         top: 185px;
         left: 30px;
         border: solid 2px green;
+        max-width: 110px;
     }
     .biografia {
         padding: 80px 50px;
@@ -340,23 +347,23 @@ h1{
         padding: 72px 0;
     }
     @keyframes rodar{
-        0%{margin-left: -15;}
-        10%{margin-left: -10;}
+        0%{margin-left: 40;}
+        10%{margin-left: 45;}
     
-        11%{margin-left: -5%;}
-        20%{margin-left: 0%;}
+        11%{margin-left: 45%;}
+        20%{margin-left: 50%;}
     
-        20%{margin-left: 5%;}
-        30%{margin-left: 10%;}
+        20%{margin-left: 60%;}
+        30%{margin-left: 65%;}
         
-        40%{margin-left: 15%;}
-        50%{margin-left: 20%;}
+        40%{margin-left: 70%;}
+        50%{margin-left: 75%;}
     
-        60%{margin-left: 25%;}
-        70%{margin-left: 30%;}
+        60%{margin-left: 80%;}
+        70%{margin-left: 85%;}
     
-        80%{margin-left: 35%;}
-        90%{margin-left: 35%;}
+        80%{margin-left: 85%;}
+        90%{margin-left: 90%;}
     }
     .portada1{
         display: none;
