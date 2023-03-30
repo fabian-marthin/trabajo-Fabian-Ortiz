@@ -119,7 +119,8 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #007c3d;
+    background: hsl(150, 100%, 24%);
+    width: 100%;
 }
 .containerSlider .slider{
     display: flex;

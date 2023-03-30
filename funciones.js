@@ -1,3 +1,4 @@
+console.log("holaaa")
 const btnMenuHamb = document.querySelector(".btnMenuHamb");
 btnMenuHamb.addEventListener("click", abrirMenu);
 
@@ -21,9 +22,18 @@ const izq = document.querySelector(".izq");
 const der = document.querySelector(".der");
 const slider = document.querySelector(".slider");
 
+
+function anchoPantalla(pantalla){
+    if(pantalla>1115){
+        return 1115;
+    }else{
+        return window.innerWidth;
+    }
+}
+
 izq.addEventListener("click", () => {
-    slider.scrollLeft -= window.innerWidth*0.665;
+    slider.scrollLeft -= anchoPantalla(window.innerWidth)*0.665;
 })
 der.addEventListener("click", () => {
-    slider.scrollLeft += window.innerWidth*0.665;
+    slider.scrollLeft += anchoPantalla(window.innerWidth)*0.665;
 })
