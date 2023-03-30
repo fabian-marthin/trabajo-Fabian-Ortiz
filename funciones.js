@@ -16,3 +16,14 @@ function abrirMenu(){
     }
 return abrirMenu;
 }
+
+const izq = document.querySelector(".izq");
+const der = document.querySelector(".der");
+const slider = document.querySelector(".slider");
+
+izq.addEventListener("click", () => {
+    slider.scrollLeft -= window.innerWidth*0.665;
+})
+der.addEventListener("click", () => {
+    slider.scrollLeft += window.innerWidth*0.665;
+})
