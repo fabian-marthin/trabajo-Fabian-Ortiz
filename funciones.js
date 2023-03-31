@@ -23,10 +23,11 @@ const der = document.querySelector(".der");
 const slider = document.querySelector(".slider");
 
 izq.addEventListener("click", () => {
-    slider.scrollLeft -= anchoPantalla(window.innerWidth)*0.738;
+    slider.scrollLeft -= anchoPantalla(window.innerWidth);
 });
 der.addEventListener("click", () => {
-    slider.scrollLeft += anchoPantalla(window.innerWidth)*0.738;
+    slider.scrollLeft += anchoPantalla(window.innerWidth);
+    console.log(slider.scrollLeft);
 });
 
 function anchoPantalla(pantalla){
