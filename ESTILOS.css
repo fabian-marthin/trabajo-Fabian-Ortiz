@@ -74,10 +74,11 @@ body{
     height: 123px;
 }
 
-.arbusto{
+.arbusto {
     display: flex;
-    animation: rodar 2s infinite;  
-    width: 200px; 
+    animation: rodar 2s infinite ease;
+    width: 200px;
+    position: static;
 }
 @keyframes rodar{
     0%{margin-left: -20%;}
@@ -380,11 +381,11 @@ h1{
     .espera h1 {
         padding: 72px 0;
     }
-    .arbusto{
+    .arbusto {
         display: flex;
         animation: esconder 2s infinite ease;
         width: 200px;
-        position: relative;
+        position: static;
     }
     @keyframes esconder{
         0%{margin-left: -20%;}
