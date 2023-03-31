@@ -24,16 +24,16 @@ const slider = document.querySelector(".slider");
 
 
 function anchoPantalla(pantalla){
-    if(pantalla>1115){
-        return 1115;
+    if(pantalla>1000){
+        return 1000;
     }else{
         return window.innerWidth;
     }
 }
 
 izq.addEventListener("click", () => {
-    slider.scrollLeft -= anchoPantalla(window.innerWidth)*0.665;
+    slider.scrollLeft -= anchoPantalla(window.innerWidth)*0.738;
 })
 der.addEventListener("click", () => {
-    slider.scrollLeft += anchoPantalla(window.innerWidth)*0.665;
+    slider.scrollLeft += anchoPantalla(window.innerWidth)*0.738;
 })

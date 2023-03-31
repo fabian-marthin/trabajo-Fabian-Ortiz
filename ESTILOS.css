@@ -27,15 +27,14 @@ body{
     border: solid 2px green;
 }
 .portada {
-    background-color: rgb(198 180 158);
+    background-image: url("./portada.jpeg");
     height: 270px;
     display: flex;
     justify-content: center;
 }
 .portada img{
+    background: url(./portada.jpeg) repeat center center;
     width: 100%;
-    height: 100%;
-    max-width: 1020px;
 }
 .portada2{
     display: none;
@@ -56,6 +55,7 @@ body{
 .btn-menu a:hover{
     background-color: #7bd1a6;
     color: #ffffff;
+    border-radius: 15px;
 }
 .cerrarMenu{
     display: none;
@@ -73,30 +73,35 @@ body{
     width: 242px;
     height: 123px;
 }
+
+.arbusto{
+    display: flex;
+    animation: rodar 2s infinite;  
+    width: 200px; 
+}
 @keyframes rodar{
-    0%{margin-left: -25;}
-    14%{margin-left: -20;}
-
-    15%{margin-left: -15%;}
-    24%{margin-left: -10%;}
-
-    25%{margin-left: -5%;}
-    34%{margin-left: 0%;}
-    
+    0%{margin-left: -20%;}
+    5%{margin-left: -15%;}
+    10%{margin-left: -10%;}
+    15%{margin-left: -5%;}
+    20%{margin-left: 0%;}
+    25%{margin-left: 5%;}
+    30%{margin-left: 10%;}
     35%{margin-left: 15%;}
+    40%{margin-left: 20%;}
+    45%{margin-left: 25%;}
     50%{margin-left: 30%;}
-
-    51%{margin-left: 35%;}
-    60%{margin-left: 50%;}
-
-    61%{margin-left: 65%;}
-    74%{margin-left: 75%;}
+    55%{margin-left: 35%;}
+    60%{margin-left: 40%;}
+    65%{margin-left: 45%;}
+    70%{margin-left: 50%;}
+    75%{margin-left: 55%;}
+    80%{margin-left: 60%;}
+    85%{margin-left: 65%;}
+    90%{margin-left: 70%;}
+    95%{margin-left: 75%;}
+    100%{margin-left: 80%;}
     
-    75%{margin-left: 90%;}
-    84%{margin-left: 105%;}
-
-    85%{margin-left: 115%;}
-    100%{margin-left: 130%;}
 }
 .btnMenuHamb{
     display: flex;
@@ -115,16 +120,16 @@ h1{
 
 /* HOME */
 .containerSlider{
-    position: unset;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: hsl(150, 100%, 24%);
     width: 100%;
+    padding-top: 10px;
+    top: 336px;
+    background-image: url("./fondo.jpg");
 }
 .containerSlider .slider{
     display: flex;
-    background: black;
     padding: 2px;
     width: 68%;
     height: 30%;
@@ -132,7 +137,10 @@ h1{
     scroll-behavior: smooth;
 }
 .containerSlider .slider img{
+    padding: 0px 5px;
     width: 100%;
+    border-radius: 15px;
+    max-width: 742px;
 }
 .containerSlider .control{
     position: absolute;
@@ -273,6 +281,7 @@ h1{
 }
 
 
+
 @media (max-width: 480px){
     .btnMenuHamb {
         display: flex;
@@ -411,6 +420,9 @@ h1{
         width: 54px;
         position: unset;
     }
+    .espera h1{
+        padding: 15px;
+    }
 }
 @media (min-width: 1135px){
     .portada img {
@@ -418,7 +430,7 @@ h1{
         height: 100%;
     }
     .portada {
-        background-color: rgb(198 180 158);
+        background: url("./portada.jpeg") repeat center center;
         height: 270px;
         display: flex;
         justify-content: center;
