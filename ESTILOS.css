@@ -101,7 +101,6 @@ body{
     90%{margin-left: 70%;}
     95%{margin-left: 75%;}
     100%{margin-left: 80%;}
-    
 }
 .btnMenuHamb{
     display: flex;
@@ -381,24 +380,22 @@ h1{
     .espera h1 {
         padding: 72px 0;
     }
-    @keyframes rodar{
-        0%{margin-left: 40;}
-        10%{margin-left: 45;}
-    
-        11%{margin-left: 45%;}
-        20%{margin-left: 50%;}
-    
-        20%{margin-left: 60%;}
-        30%{margin-left: 65%;}
-        
-        40%{margin-left: 70%;}
-        50%{margin-left: 75%;}
-    
-        60%{margin-left: 80%;}
-        70%{margin-left: 85%;}
-    
-        80%{margin-left: 85%;}
-        90%{margin-left: 90%;}
+    .arbusto{
+        display: flex;
+        animation: esconder 2s infinite ease;
+        width: 200px;
+        position: relative;
+    }
+    @keyframes esconder{
+        0%{margin-left: -20%;}
+        5%{margin-left: -15%;}
+        10%{margin-left: -10%;}
+        15%{margin-left: -5%;}
+        20%{margin-left: 0%;}
+        25%{margin-left: 5%;}
+        30%{margin-left: 10%;}
+        35%{margin-left: 15%;}
+        40%{margin-left: 20%;}
     }
     .portada1{
         display: none;

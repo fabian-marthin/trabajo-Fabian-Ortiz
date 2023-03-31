@@ -22,6 +22,12 @@ const izq = document.querySelector(".izq");
 const der = document.querySelector(".der");
 const slider = document.querySelector(".slider");
 
+izq.addEventListener("click", () => {
+    slider.scrollLeft -= anchoPantalla(window.innerWidth)*0.738;
+});
+der.addEventListener("click", () => {
+    slider.scrollLeft += anchoPantalla(window.innerWidth)*0.738;
+});
 
 function anchoPantalla(pantalla){
     if(pantalla>1000){
@@ -29,11 +35,5 @@ function anchoPantalla(pantalla){
     }else{
         return window.innerWidth;
     }
-}
+};
 
-izq.addEventListener("click", () => {
-    slider.scrollLeft -= anchoPantalla(window.innerWidth)*0.738;
-})
-der.addEventListener("click", () => {
-    slider.scrollLeft += anchoPantalla(window.innerWidth)*0.738;
-})
