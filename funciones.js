@@ -34,7 +34,7 @@ function anchoPantalla(pantalla){
     if(pantalla>1000){
         return 1000;
     }else{
-        return window.innerWidth;
+        return pantalla-17;
     }
 };
 
