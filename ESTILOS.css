@@ -211,6 +211,7 @@ body{
     width: 20%;
     border: 2px solid;
     margin: 10px;
+    min-width: 90px;
 }
 .biografia h1{
     display: flex;
