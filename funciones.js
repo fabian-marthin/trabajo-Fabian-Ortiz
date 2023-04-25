@@ -32,7 +32,7 @@ function anchoPantalla(pantalla){
     if(pantalla>1000){
         return 1000;
     }else{
-        return pantalla-17;
+        return pantalla;
     }
 };
 

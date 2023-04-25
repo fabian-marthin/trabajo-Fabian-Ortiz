@@ -153,27 +153,15 @@ body{
     width: 100%;
     max-width: 1000px;
 }
-.flechas{
-    display: flex;
-    justify-content: space-between;
-    background: url(./IMAGENES/fondo.jpg);
-    padding: 0 60px;
+.izq{
+    position: absolute;
+    width: 8%;
+    left: 0;
 }
-
-.flechas .izq{
-    background: transparent;
-    width: 10%;
-    height: 10%;
-    left: 0px;
-    max-width: 50px;
-}
-
-.flechas .der{
-    background: transparent;
-    width: 10%;
-    height: 10%;
-    right: 0px;
-    max-width: 50px;
+.der{
+    position: absolute;
+    width: 8%;
+    right: 0;
 }
 
 @keyframes cambio{
