@@ -42,10 +42,9 @@ body{
 .btn-menu{
     display: flex;
     justify-content: center;
-    padding: 0 50px;
     align-items: center;
     flex-wrap: wrap;
-    background: rgb(181 41 93 / 50%);
+    background: rgb(97 97 97 / 50%);
     position: fixed;
     top: 0;
     width: 100%;
@@ -53,16 +52,22 @@ body{
 }
 .btns-menu-opciones{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 25px;
+}
+.lgo2{
+    width: 250px;
 }
 .btn-menu a{
-    padding: 5px 20px;
     text-decoration: none; 
     color: white;  
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100px;
 }
 .btn-menu a:hover{
     margin-bottom: #7bd1a6;
@@ -80,23 +85,10 @@ body{
     display: none;
 }
 
-/* .btn-menu{
-    display: flex;
-}
-.menu {
-    display: flex;
-    flex-direction: column;
-}
-.menu img{
-    width: 55px;
-}
-.menu a{
-    display: flex;
-    align-items: center;
-} */
-
 .lgo2{
     display: flex;
+    width: 100%;
+    max-width: 250px;
 }
 .logos{
     display: flex;
@@ -142,11 +134,29 @@ body{
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    left: 92%;
 }
 .btnMenuHamb img, p{
     width: 40px;
     display: none;
+}
+.redesSociales{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    padding: 10px;
+}
+.redesSociales img{
+    width: 5%;
+    min-width: 50px;
+    background: white;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+.redesSociales ul{
+    width: 50px;
 }
 
 
@@ -155,12 +165,13 @@ body{
 .containerCenter{
     display: flex;
     justify-content: center;
+    background: url(./IMAGENES/fondo.jpg);
 }
 .containerSlider {
     position: relative;
     background: black;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,6 +194,18 @@ body{
     position: absolute;
     width: 8%;
     right: 0;
+}
+.opciones{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.opciones a{
+    padding: 0 25%;
+    text-decoration: none;
+    background: #254C96;
+    color: wheat;
+    width: 100%;
 }
 
 /* MI HISTORIA */
@@ -232,6 +255,9 @@ body{
 .fondoEventos{
     background: url(./IMAGENES/fondoDesierto.jpeg) ;
     background-size: cover;
+}
+.fondoEventos h1{
+    padding: 120px 0;
 }
 .mensajeEvento h1{
     padding: 145px 50px 0;
@@ -322,26 +348,37 @@ body{
 
 
 @media (max-width: 700px){
-    .btnMenuHamb {
-        display: flex;
-        justify-content: flex-start;
-        position: absolute;
-        left: 85%;
-        top: 20px;
-        align-items: center;
+    #lgo2 {
+        width: 40%;
+        max-width: 200px;
+        min-width: 140px;
     }
-    .btnMenuHamb p{
+    .btns-menu-opciones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .btns-menu-opciones div {
+        display: flex;
+        justify-content: center;
+    }
+    .btnMenuHamb {
+        background: rgb(97 97 97 / 50%);
+        top: 0;
+        left: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        padding: 0 10px;
+    }
+    .btnMenuHamb p {
         color: wheat;
         display: flex;
-        position: fixed;
-        top: 15px;
-        background: rgb(55 155 72 / 92%);
-        width: 130px;
-        padding: 17px;
         justify-content: center;
         align-items: center;
-        border-radius: 50px;
-        right: 0;
+        width: 100px;
     }
     .btnMenuHamb img{
         cursor: pointer;
@@ -357,7 +394,7 @@ body{
     .btn-menu {
         flex-direction: column;
         position: fixed;
-        background: rgb(144 187 155 / 90%);
+        background: rgb(97 97 97 / 50%); 
         width: 100%;
         height: 100%;
         top: 0;

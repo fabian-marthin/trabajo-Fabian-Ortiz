@@ -1,6 +1,8 @@
 console.log("holaaa")
 const btnMenuHamb = document.querySelector(".btnMenuHamb");
+const cerrarMenu = document.querySelector(".cerrarMenu");
 btnMenuHamb.addEventListener("click", abrirMenu);
+cerrarMenu.addEventListener("click", abrirMenu);
 
 const menuDelHamb = document.querySelector(".btn-menu");
 
@@ -29,8 +31,8 @@ der.addEventListener("click", () => {
 });
 
 function anchoPantalla(pantalla){
-    if(pantalla>800){
-        return 800;
+    if(pantalla>900){
+        return 900;
     }else{
         return pantalla;
     }
