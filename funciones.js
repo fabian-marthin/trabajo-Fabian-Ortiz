@@ -1,5 +1,5 @@
 console.log("holaaa")
-const btnMenuHamb = document.querySelector(".btnMenuHamb");
+const btnMenuHamb = document.querySelector(".abrirMenu");
 const cerrarMenu = document.querySelector(".cerrarMenu");
 btnMenuHamb.addEventListener("click", abrirMenu);
 cerrarMenu.addEventListener("click", abrirMenu);
