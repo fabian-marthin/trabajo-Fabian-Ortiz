@@ -16,8 +16,8 @@ function abrirMenu(){
 return abrirMenu;
 }
 
-const izq = document.querySelector(".izq");
-const der = document.querySelector(".der");
+const izq = document.querySelector("#izq");
+const der = document.querySelector("#der");
 const slider = document.querySelector(".slider");
 
 izq.addEventListener("click", () => {
@@ -29,8 +29,8 @@ der.addEventListener("click", () => {
 });
 
 function anchoPantalla(pantalla){
-    if(pantalla>1000){
-        return 1000;
+    if(pantalla>800){
+        return 800;
     }else{
         return pantalla;
     }
